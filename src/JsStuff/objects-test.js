@@ -1,4 +1,5 @@
 require('chai').should();
+var myObjects = require('../ objects');
 
 describe('objects', function () {
   it('should return Bob John', function () {
@@ -9,7 +10,7 @@ describe('objects', function () {
     
     // Rewrite objects.getFullName() in objects.js to satisfy
     // this test condition
-    objects.getFullname().should.equal('Bob John');   
-
+    //objects.getFullname().should.equal('Bob John');   
+    myObjects.objects.getFullname().should.equal('Bob John');
   });
 });
