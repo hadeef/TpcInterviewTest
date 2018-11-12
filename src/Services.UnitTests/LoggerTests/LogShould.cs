@@ -9,10 +9,19 @@ namespace Services.UnitTests.LoggerTests
 {
     public class LogShould
     {
+        private readonly ILogType LogType;
+        private readonly Logger logger;
+        
+        public LogShould()
+        {
+            LogType = new Mock<ConsoleLogType>();
+            logger = new Logger(LogType);
+        }
+        
         [Fact]
         public void Call_Log_with_message()
         {
-            throw new NotImplementedException();            
+            logger.Log("hello world");           
         }
     }
 }
