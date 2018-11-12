@@ -8,6 +8,7 @@ var objects = {
 
 		// do not simply 'Bob John'. Please reference the object
 
+		//return fullname;
 		return this.fullname;
 	}
 };
