@@ -5,5 +5,5 @@ Write a simple function that returns the string 'hello' and is visible in in hel
 */
 
 function helloFunction() {
-return "Hello ";
+return 'Hello';
 }
